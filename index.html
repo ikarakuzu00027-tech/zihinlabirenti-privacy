@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="tr">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,11 +61,6 @@
       border-top: 1px solid var(--rule);
     }
 
-    h3 {
-      font-size: 1rem;
-      margin: 28px 0 8px;
-    }
-
     .sub {
       color: var(--muted);
       margin: 0 0 8px;
@@ -101,7 +95,6 @@
       border-radius: 10px;
       padding: 16px 18px;
       margin: 18px 0;
-      background: color-mix(in srgb, var(--fg) 4%, transparent);
     }
 
     code {
@@ -115,18 +108,19 @@
 
     <h1>Zihin Labirenti — Gizlilik Politikası</h1>
     <p class="sub">Uygulama kimliği: <code>com.zihinlabirenti.game</code></p>
-    <p class="updated">Son güncelleme: 5 Ekim 2026</p>
+    <p class="updated">Son güncelleme: 6 Ekim 2026</p>
 
     <div class="box">
-      <strong>Kısaca:</strong> Zihin Labirenti hiçbir kişisel veri toplamaz, saklamaz veya
-      aktarmaz. Uygulamanın internet erişimi yoktur. Oyun ilerlemen yalnızca kendi
-      cihazında kalır.
+      <strong>Kısaca:</strong> Oyun ilerlemen yalnızca kendi cihazında kalır ve bize
+      gönderilmez. Uygulama reklam gösterir; reklamları Google AdMob sunar ve bu amaçla
+      cihazından bazı bilgiler toplanır. Ayrıntılar 4. bölümde.
     </div>
 
-    <h2>1. Topladığımız veriler</h2>
+    <h2>1. Bizim topladığımız veriler</h2>
     <p>
-      Hiçbiri. Uygulama ad, e-posta, telefon numarası, konum, kişiler, fotoğraflar,
-      cihaz kimliği veya reklam kimliği gibi hiçbir bilgiyi toplamaz.
+      Hiçbiri. Sana ad, e-posta, telefon numarası veya konum sormuyoruz; bunları
+      okumuyoruz ve hiçbir yere göndermiyoruz. Kişilerine, fotoğraflarına veya
+      dosyalarına erişmiyoruz. Bizim bir sunucumuz yok.
     </p>
 
     <h2>2. Cihazında saklanan bilgiler</h2>
@@ -145,18 +139,48 @@
       <em>Ayarlar &rarr; İlerlemeyi Sıfırla</em>, ya da uygulamayı cihazından kaldırarak.
     </p>
 
-    <h2>3. İnternet bağlantısı</h2>
+    <h2>3. İzinler ve internet bağlantısı</h2>
     <p>
-      Uygulama internet izni dahi istemez. Tek istediği izin, duvara çarpma geri
-      bildirimi için kullanılan titreşim (<code>VIBRATE</code>) iznidir. Sunucuya veri
-      gönderen bir özellik bulunmaz.
+      Uygulama şu izinleri kullanır:
+    </p>
+    <ul>
+      <li><code>INTERNET</code> — yalnızca reklamları yüklemek için</li>
+      <li><code>VIBRATE</code> — top duvara çarptığında titreşim geri bildirimi</li>
+      <li><code>AD_ID</code> — reklam kimliği, reklam kişiselleştirmesi için</li>
+    </ul>
+    <p>
+      Oyun ilerlemen bu bağlantı üzerinden hiçbir yere gönderilmez.
     </p>
 
-    <h2>4. Üçüncü taraf hizmetler</h2>
+    <h2>4. Reklamlar</h2>
     <p>
-      Uygulamada reklam ağı, analiz aracı, çökme raporlama servisi, sosyal medya
-      eklentisi veya uygulama içi satın alma bulunmaz. Hiçbir üçüncü tarafla veri
-      paylaşılmaz.
+      Uygulama <strong>Google AdMob</strong> üzerinden reklam gösterir: bölüm aralarında
+      tam ekran reklamlar ve isteğe bağlı olarak izlediğinde oyun içi hak kazandıran
+      ödüllü reklamlar.
+    </p>
+    <p>
+      Reklamları sunabilmek ve ölçebilmek için Google, cihazından şu türde bilgileri
+      toplayabilir:
+    </p>
+    <ul>
+      <li>Reklam kimliği (Android Advertising ID)</li>
+      <li>Cihaz modeli, işletim sistemi sürümü, dil ve IP adresinden türetilen yaklaşık konum</li>
+      <li>Reklamla etkileşimin: gösterim, tıklama, izlenen ödüllü reklam</li>
+    </ul>
+    <p>
+      Bu bilgiler Google tarafından kendi gizlilik politikası kapsamında işlenir:
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+      Google'ın reklam amaçlı veri kullanımı için:
+      <a href="https://policies.google.com/technologies/partner-sites">Google'ın iş
+        ortağı sitelerinde veri kullanımı</a>.
+    </p>
+    <p>
+      Cihazında <em>Ayarlar &rarr; Google &rarr; Reklamlar</em> yolundan reklam
+      kişiselleştirmesini kapatabilir veya reklam kimliğini sıfırlayabilirsin.
+    </p>
+    <p>
+      Reklam dışında uygulamada analiz aracı, çökme raporlama servisi, sosyal medya
+      eklentisi veya uygulama içi satın alma bulunmaz.
     </p>
 
     <h2>5. Paylaşma özelliği</h2>
@@ -168,14 +192,14 @@
 
     <h2>6. Çocuklar</h2>
     <p>
-      Uygulama hiçbir veri toplamadığı için çocuklardan da veri toplamaz. 13 yaş altı
-      kullanıcılara yönelik özel olarak tasarlanmamıştır.
+      Uygulama 13 yaş altı kullanıcılara yönelik tasarlanmamıştır ve onları hedeflemez.
+      Reklamlar, uygulamanın derecelendirildiği yaş grubuna uygun şekilde sunulur.
     </p>
 
     <h2>7. Bu politikadaki değişiklikler</h2>
     <p>
-      Politika güncellenirse bu sayfa ve yukarıdaki tarih yenilenir. Gelecekte veri
-      toplayan bir özellik eklenirse, bu sayfa o özellik yayına girmeden önce
+      Politika güncellenirse bu sayfa ve yukarıdaki tarih yenilenir. Veri toplama
+      biçimini değiştiren bir özellik eklenirse, bu sayfa o özellik yayına girmeden önce
       güncellenir.
     </p>
 
@@ -188,17 +212,19 @@
 
     <h1 style="margin-top:48px">Zihin Labirenti — Privacy Policy</h1>
     <p class="sub">Application ID: <code>com.zihinlabirenti.game</code></p>
-    <p class="updated">Last updated: 5 October 2026</p>
+    <p class="updated">Last updated: 6 October 2026</p>
 
     <div class="box">
-      <strong>In short:</strong> Zihin Labirenti does not collect, store or transmit any
-      personal data. The app has no internet access. Your progress stays on your device.
+      <strong>In short:</strong> Your game progress stays on your device and is never
+      sent to us. The app shows ads, served by Google AdMob, and some information is
+      collected from your device for that purpose. Details in section 4.
     </div>
 
     <h2>1. Data we collect</h2>
     <p>
-      None. The app collects no name, email address, phone number, location, contacts,
-      photos, device identifier or advertising identifier.
+      None. We do not ask for your name, email address, phone number or location; we do
+      not read them and we do not send them anywhere. We do not access your contacts,
+      photos or files. We do not operate a server.
     </p>
 
     <h2>2. Information stored on your device</h2>
@@ -217,17 +243,48 @@
       <em>Settings &rarr; Reset Progress</em> in the game, or by uninstalling the app.
     </p>
 
-    <h2>3. Internet access</h2>
+    <h2>3. Permissions and internet access</h2>
     <p>
-      The app does not even request internet permission. The only permission it requests
-      is vibration (<code>VIBRATE</code>), used for feedback when the ball hits a wall.
-      There is no feature that sends data to a server.
+      The app uses the following permissions:
+    </p>
+    <ul>
+      <li><code>INTERNET</code> — only to load ads</li>
+      <li><code>VIBRATE</code> — haptic feedback when the ball hits a wall</li>
+      <li><code>AD_ID</code> — the advertising identifier, for ad personalisation</li>
+    </ul>
+    <p>
+      Your game progress is never sent anywhere over this connection.
     </p>
 
-    <h2>4. Third-party services</h2>
+    <h2>4. Advertising</h2>
     <p>
-      The app contains no advertising network, analytics tool, crash reporting service,
-      social media plugin or in-app purchases. No data is shared with any third party.
+      The app shows ads through <strong>Google AdMob</strong>: full-screen ads between
+      levels, and optional rewarded ads that grant an in-game charge when you choose to
+      watch one.
+    </p>
+    <p>
+      To serve and measure those ads, Google may collect information from your device
+      such as:
+    </p>
+    <ul>
+      <li>Your advertising identifier (Android Advertising ID)</li>
+      <li>Device model, operating system version, language and approximate location derived from your IP address</li>
+      <li>Your interaction with an ad: impressions, clicks, rewarded ads watched</li>
+    </ul>
+    <p>
+      Google processes this information under its own privacy policy:
+      <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+      For how Google uses data for advertising, see
+      <a href="https://policies.google.com/technologies/partner-sites">how Google uses
+        data on partner sites</a>.
+    </p>
+    <p>
+      You can turn off ad personalisation or reset your advertising identifier on your
+      device under <em>Settings &rarr; Google &rarr; Ads</em>.
+    </p>
+    <p>
+      Apart from advertising, the app contains no analytics tool, crash reporting
+      service, social media plugin or in-app purchases.
     </p>
 
     <h2>5. The share feature</h2>
@@ -238,15 +295,16 @@
 
     <h2>6. Children</h2>
     <p>
-      Because the app collects no data at all, it collects no data from children either.
-      It is not specifically designed for users under the age of 13.
+      The app is not designed for and is not directed at children under the age of 13.
+      Ads are served in accordance with Google Play policy for the age group the app is
+      rated for.
     </p>
 
     <h2>7. Changes to this policy</h2>
     <p>
       If this policy changes, this page and the date above will be updated. If a feature
-      that collects data is ever added, this page will be updated before that feature
-      ships.
+      that changes how data is handled is ever added, this page will be updated before
+      that feature ships.
     </p>
 
     <h2>8. Contact</h2>
